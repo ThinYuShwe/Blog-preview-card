@@ -1,0 +1,83 @@
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+}
+
+main {
+  /* max-width: 22rem; */
+  max-width: 327px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.learning {
+  background-color: hsl(47, 88%, 63%);
+  width: 5.5rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: bolder;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: hsl(47, 88%, 63%);
+}
+
+span {
+  text-transform: lowercase;
+}
+
+.text {
+  font-size: 16px;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile img {
+  width: 2.5rem;
+}
+
+.profile p {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    main{
+        max-width: 384px;
+    }
+
+    .text{
+        font-size: 1.1rem;
+    }
+}
